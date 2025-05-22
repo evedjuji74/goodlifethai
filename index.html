@@ -1,39 +1,167 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoodLifeThai - Bien consommer en Thaïlande</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodLifeThai - เพื่อการใช้ชีวิตที่ดีขึ้น</title>
+    <meta name="description" content="แนะนำผลิตภัณฑ์ที่ดีที่สุดในด้านความงาม อาหาร และเทคโนโลยีสำหรับชาวไทย">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>GoodLifeThai</h1>
-    <p class="slogan">
-      ใช้ชีวิตดี กินดี ดูดี – ในราคาที่เข้าถึงได้<br>
-      Bien vivre, bien manger, bien paraître – au bon prix
-    </p>
-    <div class="language-selector">ภาษาไทย | Français</div>
-    <nav>
-      <a href="articles/article1.html">💄 ความงาม / Cosmétiques</a>
-      <a href="articles/article2.html">🍜 อาหาร / Alimentation</a>
-      <a href="articles/article3.html">📱 เทคโนโลยี / Technologie</a>
-    </nav>
-  </header>
+    <!-- En-tête du site -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GoodLifeThai<span>.com</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="pages/cosmetics.html">เครื่องสำอาง</a></li>
+                    <li><a href="pages/food.html">อาหาร</a></li>
+                    <li><a href="pages/tech.html">เทคโนโลยี</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="recent-articles">
-      <h2>📰 บทความล่าสุด / Articles récents</h2>
-      <ul>
-        <li><a href="articles/article1.html">🌿 มาสก์หน้าธรรมชาติไม่เกิน 100 บาท / Masques naturels à moins de 100฿</a></li>
-        <li><a href="articles/article2.html">🥗 ขนมเพื่อสุขภาพใน 7-Eleven / Snacks sains chez 7-Eleven</a></li>
-        <li><a href="articles/article3.html">🎧 หูฟังไร้สายไม่เกิน 500 บาท / Écouteurs sans fil à moins de 500฿</a></li>
-      </ul>
+    <!-- Bannière principale -->
+    <section class="hero">
+        <div class="container">
+            <h2>Bien vivre, bien manger, bien paraître – au bon prix</h2>
+            <p class="subheading">เพื่อการกิน อยู่ และดูดี ในราคาที่เหมาะสม</p>
+            <div class="category-buttons">
+                <a href="pages/cosmetics.html" class="btn">
+                    <i class="fas fa-spa"></i> เครื่องสำอาง
+                </a>
+                <a href="pages/food.html" class="btn">
+                    <i class="fas fa-utensils"></i> อาหาร
+                </a>
+                <a href="pages/tech.html" class="btn">
+                    <i class="fas fa-mobile-alt"></i> เทคโนโลยี
+                </a>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 GoodLifeThai | <a href="#">ข้อกำหนดทางกฎหมาย / Mentions légales</a></p>
-  </footer>
+    <!-- Articles récents -->
+    <section class="recent-articles">
+        <div class="container">
+            <h2>บทความล่าสุด</h2>
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/350x200" alt="เครื่องสำอางเกาหลี">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">เครื่องสำอาง</span>
+                        <h3><a href="articles/cosmetics.html">10 อันดับครีมกันแดดที่ดีที่สุดสำหรับผิวคนไทย ปี 2025</a></h3>
+                        <p>รีวิวครีมกันแดดที่เหมาะกับสภาพอากาศร้อนชื้นของเมืองไทย และปกป้องผิวจากรังสี UV ได้อย่างมีประสิทธิภาพ</p>
+                        <a href="articles/cosmetics.html" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/350x200" alt="อาหารเพื่อสุขภาพ">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">อาหาร</span>
+                        <h3><a href="articles/food.html">5 สูตรอาหารคลีนที่อร่อยและทำง่ายสำหรับชีวิตคนเมือง</a></h3>
+                        <p>วิธีทำอาหารคลีนที่รสชาติดี ประหยัดเวลา และช่วยให้คุณมีสุขภาพที่ดีขึ้น เหมาะสำหรับคนทำงานที่มีเวลาน้อย</p>
+                        <a href="articles/food.html" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/350x200" alt="สมาร์ทโฟนรุ่นใหม่">
+                    </div>
+                    <div class="article-content">
+                        <span class="category">เทคโนโลยี</span>
+                        <h3><a href="articles/tech.html">เปรียบเทียบสมาร์ทโฟนรุ่นใหม่ 2025 รุ่นไหนคุ้มค่าที่สุด?</a></h3>
+                        <p>รีวิวและเปรียบเทียบสมาร์ทโฟนรุ่นล่าสุดในตลาด พร้อมแนะนำรุ่นที่คุ้มค่าที่สุดสำหรับงบประมาณแต่ละระดับ</p>
+                        <a href="articles/tech.html" class="read-more">อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn">ดูบทความทั้งหมด <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion / Newsletter -->
+    <section class="promotion">
+        <div class="container">
+            <h2>รับข่าวสารและส่วนลดพิเศษ</h2>
+            <p>สมัครรับจดหมายข่าวจากเราเพื่อรับคูปองส่วนลดและข้อมูลโปรโมชั่นล่าสุด</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="อีเมลของคุณ" required>
+                <button type="submit" class="btn">สมัครรับข่าวสาร</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GoodLifeThai<span>.com</span></h2>
+                    <p>เพื่อการใช้ชีวิตที่ดีขึ้นของคนไทย</p>
+                </div>
+                <div class="footer-links">
+                    <h3>หมวดหมู่</h3>
+                    <ul>
+                        <li><a href="pages/cosmetics.html">เครื่องสำอาง</a></li>
+                        <li><a href="pages/food.html">อาหาร</a></li>
+                        <li><a href="pages/tech.html">เทคโนโลยี</a></li>
+                    </ul>
+                </div>
+                <div class="footer-shop">
+                    <h3>ช้อปออนไลน์</h3>
+                    <ul>
+                        <li><a href="https://shopee.co.th/" target="_blank">Shopee</a></li>
+                        <li><a href="https://www.lazada.co.th/" target="_blank">Lazada</a></li>
+                        <li><a href="https://www.jd.co.th/" target="_blank">JD Central</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h3>ข้อมูลทางกฎหมาย</h3>
+                    <ul>
+                        <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                        <li><a href="#">เงื่อนไขการใช้งาน</a></li>
+                        <li><a href="#">เกี่ยวกับเรา</a></li>
+                        <li><a href="#">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoodLifeThai.com สงวนลิขสิทธิ์</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-line"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
